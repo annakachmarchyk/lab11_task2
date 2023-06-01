@@ -375,15 +375,15 @@ class LinkedBST(AbstractCollection):
             # print(file)
             random_words = random.choices(file1, k=10000)
             # print(random_words)
-            # start_time1 = time.time()
-            # counter1 = 0
-            # for random_word in random_words:
-            #     for normal_word in file1:
-            #         if normal_word == random_word:
-            #             counter1 += 1
-            # end_time1 = time.time()
-            # first_time = end_time1 - start_time1
-            # print(first_time, counter1)
+            start_time1 = time.time()
+            counter1 = 0
+            for random_word in random_words:
+                for normal_word in file1:
+                    if normal_word == random_word:
+                        counter1 += 1
+            end_time1 = time.time()
+            first_time = end_time1 - start_time1
+            print(first_time, counter1)
 
             new_tree = LinkedBST()
             # start_time2 = time.time()
